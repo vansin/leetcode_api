@@ -1,5 +1,12 @@
-# leetcode_api 
+# leetcode_api
 
+```shell
+git clone https://github.com/vansin/leetcode_api.git
+```
 
+## 运行demo
 
-leetcode_api
+```shell
+pip install pandas
+python demo.py
+```
