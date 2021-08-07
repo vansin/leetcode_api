@@ -2,3 +2,9 @@
 all.json
 data
 error.json
+build
+dist
+
+leetcode_api.egg-info
+*csv
+*__pycache__*
