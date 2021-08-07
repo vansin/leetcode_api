@@ -2,7 +2,6 @@ from leetcode_api import *
 import json
 import time
 
-
 def is_today(item):
 
     timestamp = time.time()
@@ -15,19 +14,12 @@ def is_today(item):
 
 recentSubmissions = get_user_info('vansin')
 recentSubmissions = filter(is_today, recentSubmissions)
-
-
 daily_info = {}
-
 daily_info['total_submit'] = 0
 daily_info['problem_submit'] = 0
 
 problems_stat_dict = {}
 problems_stat_list = []
-
-
-
-
 
 
 for submission in recentSubmissions:
@@ -44,15 +36,12 @@ for submission in recentSubmissions:
         stats = json.loads(problem_info['stats'])
         difficulty = problem_info['difficulty']
         acRate = stats['acRate']
-
         item['titleSlug'] = titleSlug
         item['title'] = problem_info['title']
         item['translatedTitle'] = problem_info['translatedTitle']
         item['difficulty'] = difficulty
         item['acRate'] = acRate
         item['submit_nums'] = 0
-
-
 
     item = problems_stat_list[problems_stat_dict[titleSlug]]
     item['submit_nums'] += 1

@@ -5,7 +5,7 @@ with io.open('readme.md', 'r', encoding='utf8') as f:
 
 setup(
     name='leetcode_api',# 需要打包的名字,即本模块要发布的名字
-    version='v0.5.2',#版本
+    version='v0.5.3',#版本
     description='leetcode api', # 简要描述
     py_modules=['leetcode_api'],   #  需要打包的模块
     author='vansin', # 作者名
