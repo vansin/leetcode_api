@@ -11,8 +11,8 @@ setup(
     author='vansin', # 作者名
     long_description=long_description,
     long_description_content_type='text/markdown',
-author_email='msnode@163.com',   # 作者邮件
-    url='https://github.com/vansin/leetcode_stat', # 项目地址,一般是代码托管的网站
+    author_email='msnode@163.com',   # 作者邮件
+    url='https://github.com/vansin/leetcode_api', # 项目地址,一般是代码托管的网站
     # requires=['requests','urllib3'], # 依赖包,如果没有,可以不要
     license='MIT'
 )
