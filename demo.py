@@ -38,13 +38,13 @@ for submission in recentSubmissions:
         acRate = stats['acRate']
         item['titleSlug'] = titleSlug
         item['title'] = problem_info['title']
-        item['translatedTitle'] = problem_info['translatedTitle']
-        item['difficulty'] = difficulty
-        item['acRate'] = acRate
-        item['submit_nums'] = 0
+        item['题目（中文）'] = problem_info['translatedTitle']
+        item['难度'] = difficulty
+        item['正确率'] = acRate
+        item['提交次数'] = 0
 
     item = problems_stat_list[problems_stat_dict[titleSlug]]
-    item['submit_nums'] += 1
+    item['提交次数'] += 1
 
 
 print(problems_stat_list)
